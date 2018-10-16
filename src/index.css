@@ -12,3 +12,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+.container {
+  margin-top: 30px;
+}
+
+button {
+  margin-right: 5px;
+}
+
+.hasReferences {
+  margin-bottom: 10px;
+}
