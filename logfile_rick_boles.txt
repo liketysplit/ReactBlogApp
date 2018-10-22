@@ -1,0 +1,41 @@
+commit c18e11dd1b11539ad775bc8c496f1a281a0a60a8
+Author: liketysplit <rjboles2@gmail.com>
+Date:   Mon Oct 15 22:51:41 2018 -0400
+
+    3.5: Adding redirection and the ability to store posts via web
+
+commit 59894d7fb24036f7fbb79b167606463559f961ae
+Author: liketysplit <rjboles2@gmail.com>
+Date:   Mon Oct 15 22:41:57 2018 -0400
+
+    3.4: Adding validation and more to the form
+
+commit af414228520611ad5ab436c2929e0d0885fcb723
+Author: liketysplit <rjboles2@gmail.com>
+Date:   Mon Oct 15 22:22:03 2018 -0400
+
+    3.0-3.3: Getting add posts with route
+
+commit 27c53d2609cda1a8cdf7769d298c205c3af7ae05
+Author: liketysplit <rjboles2@gmail.com>
+Date:   Mon Oct 15 22:14:56 2018 -0400
+
+    2.0-2.5: Getting posts to show
+
+commit 7907d0148de7fdd75e3f6166195cad9453d82e6a
+Author: liketysplit <rjboles2@gmail.com>
+Date:   Mon Oct 15 20:56:52 2018 -0400
+
+    Add:Basic App Setup
+
+commit e4d4075b6c3c6c5083304751e9a9e359fbd7553a
+Author: liketysplit <rjboles2@gmail.com>
+Date:   Mon Oct 15 11:59:58 2018 -0400
+
+    created a new react app
+
+commit f6ba496925c1f547030150ee69ab3bed034edc1a
+Author: liketysplit <rjboles2@gmail.com>
+Date:   Mon Oct 15 11:58:45 2018 -0400
+
+    Initial commit from Create React App
