@@ -32,14 +32,19 @@ class PostsShow extends Component {
 				<Link to="/" className="btn btn-primary">
 					Back to Index
 				</Link>
-
+				&nbsp;&nbsp;&nbsp;
+				<Link
+					to={`/api/posts/${this.props.match.params.id}/edit`}
+					className="btn btn-primary"
+				>
+					Edit
+				</Link>
 				<button
 					className="btn btn-danger float-right"
 					onClick={this.onDeleteClick.bind(this)}
 				>
 					Delete Post
 				</button>
-
 				<div className="container">
 					<div className="row">
 						<div className="col-2">

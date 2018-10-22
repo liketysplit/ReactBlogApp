@@ -5,6 +5,7 @@ export const FETCH_POSTS = "fetch_posts";
 export const CREATE_POST = "create_post";
 export const FETCH_POST = "fetch_post";
 export const DELETE_POST = "fetch_post";
+export const UPDATE_POST = "update_post";
 
 const ROOT_URL = "https://blog-server-rick-boles.herokuapp.com/api";
 
@@ -48,5 +49,22 @@ export function deletePost(id, callback) {
 	return {
 		type: DELETE_POST,
 		payload: id
+	};
+}
+
+export function updatePost(id, values, callback) {
+	if (!values.hasReferences || values.hasReferences === false)
+		values = _.omit(values, "references");
+
+	const request = axios
+		.put(`${ROOT_URL}/posts/${id}`, values)
+		.then(() => callback());
+
+	return {
+		type: UPDATE_POST,
+		payload: {
+			id,
+			request
+		}
 	};
 }
