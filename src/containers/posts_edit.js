@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Field, reduxForm } from "redux-form";
+import { Field, reduxForm, formValueSelector } from "redux-form";
 import { Link } from "react-router-dom";
 import { updatePost } from "../actions";
 
@@ -146,12 +146,25 @@ PostsEdit = reduxForm({
 	form: "PostsEditForm"
 })(PostsEdit);
 
+const selector = formValueSelector("PostsEditForm");
+
 PostsEdit = connect(
 	(state, ownProps) => {
-		const initialValues = state.posts[ownProps.match.params.id];
+		const title = selector(state, "title");
+		const category = selector(state, "category");
+		const content = selector(state, "content");
+		const hasRefsValue = selector(state, "hasReferences");
+		const refsValue = selector(state, "references");
 
+		// pull initial values from state "posts"
+		const initialValues = state.posts[ownProps.match.params.id];
 		// props
 		return {
+			title,
+			category,
+			content,
+			hasRefsValue,
+			refsValue,
 			initialValues
 		};
 	},
